@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #151515;
+    color: #ddd;
+    text-align: center;
+}
+
+.form-modal {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-toggle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-toggle button {
+    padding: 10px;
+    width: 48%;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#login-form,
+#signup-form {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #F86F03;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Active state for buttons */
+#login-toggle {
+    background-color: #F86F03;
+    color: #fff;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+    .form-modal {
+        width: 90%;
+    }
+    .form-toggle button {
+        width: 100%;
+    }
+}
